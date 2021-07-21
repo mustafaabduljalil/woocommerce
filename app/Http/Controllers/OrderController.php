@@ -9,6 +9,6 @@ class OrderController extends Controller
     // get orders list
     public function list(){
         $orders = Order::all();
-        return $orders;
+        return response()->json($orders);
     }
 }

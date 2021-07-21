@@ -9,6 +9,6 @@ class ProductController extends Controller
     // get products list
     public function list(){
         $products = Product::all();
-        return $products;
+        return response()->json($products);
     }
 }
